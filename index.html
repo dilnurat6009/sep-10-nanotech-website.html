@@ -66,9 +66,9 @@
          .intro {
              margin:60px;
              padding:55px;
-             font-size:30px;
+             font-size:35px;
              text-align:center;
-             font-family:'Recursive', sans-serif;
+             font-family: 'Dosis', sans-serif;
              color:#B64926;
              background-color: #ECA975;
              height:630px;
@@ -76,103 +76,138 @@
              outline:5px solid #B64926;
          }
          
-         .vocab-title {
-            font-size:150px;
-            font-weight:20px;
-            font-family: 'Londrina Solid', cursive;
-            color:#A64208;
-            background-color:#F2D1B3;
-            height:200px;
-            width:650px;
-            margin:10px;
-            padding:0px;
-            left:10%;
-            position:relative;
-            text-align:center;
-            left:-4%;
-            
-         }
-         
-         .vocab {
-            color: #A64208;
-            background-color:#F2D1B3;
-            height:125px;
-            width:825px;
-            font-size: 35px;
-            font-family:'Economica', sans-serif;
-            font-weight:0px;
-            margin:-15px;
-            padding:0px;
-            text-align:left;
-            outline: 2px dashed #A64208;
-            left:-10%;
-            position:relative;
-         }
+             .row {
+                display:flex;
+                justify-content:space-between;
+                flex-flow:wrap;
+                }
+
+            .card {
+                width:20%;
+                border: 2px solid #592C12;
+                margin-bottom:50px;
+                transition:0.3s;
+                padding:10px;
+                margin:10px;
+                top:10%;
+            }
+
+            .card-title {
+                text-align:center;
+                padding:10px;
+                color:#592C12;
+                font-size:30px;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            .card-body {
+                padding:30px 20px;
+                text-align:center;
+                font-size:20px;
+                color:#592C12;
+                background:#F2D1B3;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            .card:hover {
+                transform:scale(1.05);
+                box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.25);
+            }
+
+            @media (max-width:1000px ) {
+            .card {
+                width:40%;
+                }
+            }
+
+            @media (max-width:620px) {
+            .container {
+                width:100%;
+            }
+
+            .title {
+                padding:20px;
+                font-size:20px;
+            }
+
+            .card {
+                width:80%;
+                }
+            }
 
         .nanosize-img {
-            height:45%; 
-            width:47%;
-            right: 100px;
-            margin:10px;
-            padding:0px;
-            position:absolute;
-            top:200%;
-            right:-0.05%;
+            height:55%; 
+            width:85%;
+            margin:120px;
             
         }
         
         .mid-body {
-            background-color:#FFF0A5;
+            background-color:#F2BF5E;
             width:1500px;
-            height:1100px;
+            height:1050px;
             padding:100px;
             margin:-100px;
             background-position:center;
             position:absolute;
-            bottom:-290%;
-            outline:2px solid green;
+            bottom:-350%;
+            outline:2px solid yellow;
         }
         
         .faq-title {
             font-size:150px;
             text-align:center;
-            font-family:'Recursive', sans-serif;
+            font-family: 'Anton', sans-serif;
             position:relative;
             padding:10px;
             margin:0px;
             bottom:10%;
+            color:#592C12;
+            
             
         }
         
         .questions {
-            font-family:'Economica', sans-serif;
+           font-family: 'Dosis', sans-serif;
             font-size:35px;
             text-align:left;
             position:relative;
             margin:0px;
             padding:15px;
             bottom:10%;
+            color:#592C12;
         }
         
         .response {
-            font-family:'Economica', sans-serif;
+            font-family: 'Dosis', sans-serif;
             font-size:25px;
             text-align:left;
-            position:relative;
-            margin:10px;
+            margin:0px;
             padding:0px;
-            bottom:50%;
+            position:relative;
+            top:-100px;
+            color:#592C12;
         }
     
         
         .book {
-            float:right;
-            margin:-500px;
+            margin:0px;
             padding:0px;
+            position:absolute;
+            top:605%;
+            right:10%;
+            width:550px;
+            height:650px;
         }
         
         .person {
-            float:right;
+            margin:0px;
+            padding:0px;
+            position:absolute;
+            top:503%;
+            right:10%;
+            width:550px;
+            height:680px;
         }
         
         .body {
@@ -182,19 +217,20 @@
             margin:-100px;
             background-position:center;
             position:absolute;
-            bottom:-450%;
-            outline:2px solid navy;
+            bottom:-585%;
+            outline:2px solid #A64208;
         }
         
         
         .timeline {
             font-size:150px;
             text-align:center;
-            font-family:'Recursive', sans-serif;
+            font-family: 'Anton', sans-serif;
             position:relative;
             padding:0px;
             margin:0px;
             bottom:40px;
+            color:#A64208;
         }
         
         .timeline-headers {
@@ -203,17 +239,21 @@
             text-align:left;
             position:relative;
             padding:10px;
+            color:#A64208;
         }
         
         .timeline-body {
-            font-family:'Economica', sans-serif;
+            font-family: 'Dosis', sans-serif;
             font-size:25px;
             text-align:left;
             position:relative;
             margin:10px;
             padding:0px;
+            width:600px;
+            color:#A64208;
             
         }
+        
         </style>
 
 
@@ -222,7 +262,8 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&family=Lilita+One&family=Londrina+Solid:wght@300&family=Recursive:wght@300&display=swap" rel="stylesheet">
-
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Dosis&display=swap" rel="stylesheet">
         <title>Title</title>
     </head>
 
@@ -265,26 +306,54 @@
               <h2 class="heading2"> "Nanotechnology is an idea that <br> most people simply didn't believe" <br> Ralph Merkle </h2>
          </section>
          </div>
-
-
-         <div class="container">
-             <section id="section2">
-                   <p class="intro"> Nanotechnology in medicine is a newly discovered concept that is soon to revolutionize the future of medicine. Nanotech has targeted diseases that modern medicine does not have a cure for, for example cancer. You might be wondering why is nanotech different from modern medicine and what makes it so powerful? Based on research nanotech particles are created with substances, light, heat, etc. to repair damaged cells whereas modern medicine cannot deliver drugs as such. In addition particles are programmed to go to designated cells in our bodies to treat certain cells which make it so much more different than having swallowed a tablet. Therefore, nanotechnology in medicine could possibly make our futures more efficient.</p>
-
-
-               <h2 class="vocab-title"> Vocabulary</h2><!--
-                 <p> 
-                 --><li class="vocab"> Nanobots: nanotechnological robots</li><!--
-                 --> <li class="vocab">Nanoparticles: microscopic particle</li><!--
-                 --> <li class="vocab">Nano: a measurement</li><!--
-                 --> <li class="vocab">Nanotech: the use of matter on an atomic, molecular, and supramolecular scale for industrial purposes</li>
-                 </p>
-                
-                <img class="nanosize-img" src="https://beautyundercoverproduction.s3.amazonaws.com/ckeditor/pictures/data/000/046/615/content/nano_size2.jpg">
-         </div>
                
     
-         <div class="container">
+        <div class="container">
+                <section id="section2">
+                    <p class="intro"> Nanotechnology in medicine is a newly discovered concept that is soon to revolutionize the future of medicine. Nanotech has targeted diseases that modern medicine does not have a cure for, for example cancer. You might be wondering why is nanotech different from modern medicine and what makes it so powerful? Based on research nanotech particles are created with substances, light, heat, etc. to repair damaged cells whereas modern medicine cannot deliver drugs as such. In addition particles are programmed to go to designated cells in our bodies to treat certain cells which make it so much more different than having swallowed a tablet. Therefore, nanotechnology in medicine could possibly make our futures more efficient.</p>
+                </section>    
+        </div>
+               
+               
+                <div class="row">
+                    <div class="card-group">
+                  <div class="card">
+                    <img src="nanotech.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano Technology</h5>
+                      <p class="card-text">NanoTechnological robots</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanoparticle.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano Particles</h5>
+                      <p class="card-text">Microscopic particle</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanosize.png" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano</h5>
+                      <p class="card-text"> A measurement</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanobot.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Nano Bots</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                  </div>
+            </div>
+                </div>
+            
+            <div class="container" "nanosize-img">
+                <img class="nanosize-img" src="https://beautyundercoverproduction.s3.amazonaws.com/ckeditor/pictures/data/000/046/615/content/nano_size2.jpg">
+            </div>
+
+            
+            <div class="container">
              <section id="section3">
                  <div class="mid-body">
                     <h2 class="faq-title"> FAQ</h2>
@@ -342,13 +411,14 @@
                <li class="timeline-body"> Minimize impacts on individual </li>
            </p>
            </div>
-
+           
+          <div>
+           <img class="person"src="https://caltech-prod.s3.amazonaws.com/main/images/feynman01-NEWS-WEB.width-600_tSwRQP5.jpg">
+          </div>
+           
            <div>
-               <img class="person"sc="https://caltech-prod.s3.amazonaws.com/main/images/feynman01-NEWS-WEB.width-600_tSwRQP5.jpg">
-               <img class="book"sc="https://images-na.ssl-images-amazon.com/images/I/51PcNE1Ps4L._SX329_BO1,204,203,200_.jpg">
+           <img class="book"src="https://images-na.ssl-images-amazon.com/images/I/51PcNE1Ps4L._SX329_BO1,204,203,200_.jpg">
            </div>
-           </section>
-       </div>
 
 
 
