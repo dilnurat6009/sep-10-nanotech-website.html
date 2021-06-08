@@ -1,36 +1,111 @@
-<!DOCTYPE html>
 <html>
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- CSS -->
         <style>
+
+         .nav-item {
+             padding:20px;
+             font-size: 35px;
+             background-color: transparent;
+
+
+         }
+
+         .background {
+             background-image:url(pill4.jpg);
+             background-size:cover;
+             background-attachment:fixed;
+             background-repeat: no-repeat;
+             background-position:center;
+             width:1700px;
+             height:800px;
+             color:black;
+             outline:2px solid grey;
+             margin:-20px;
+             padding:200px;
+         }
+        
+
+         .heading {
+             font-family: 'Lilita One', cursive;
+             font-weight: 250px;
+             text-shadow: 0px 0px 0px;
+             font-size:105px;
+             position:relative;
+             margin:-55px;
+             padding:20px;
+             text-align:left;
+             color: #F2BF5E;
+             background-color:#592C12;
+             height:270px;
+             width: 765px;
+
+         }
+            
+         .heading2 {
+             font-family: 'Economica', cursive;
+             font-weight: 50px;
+             font-size:40px;
+             position:relative;
+             padding:30px;
+             margin:50px;
+             left:-30px;
+             color: #592C12;
+             background-color:#F2BF5E;
+             height:190px;
+             width: 550px;
+             
+         }
+         
+             .intro {
+             margin:auto;
+             padding:auto;
+             font-size:35px;
+             text-align:center;
+             font-family: 'Dosis', sans-serif;
+             color:#B64926;
+             background-color: #ECA975;
+             height:630px;
+             width:1200px;
+             outline:5px solid #B64926;
+         }
+
             .row {
                 display:flex;
-                justify-content:space-around;
+                justify-content:space-between;
                 flex-flow:wrap;
-            }
+                }
+                
 
             .card {
                 width:20%;
-                background:#B3E0F2;
                 border: 2px solid #592C12;
                 margin-bottom:50px;
                 transition:0.3s;
+                padding:10px;
+                margin:10px;
+                top:10%;
             }
 
-            .card-header {
+            .card-title {
                 text-align:center;
                 padding:10px;
                 color:#592C12;
+                font-size:30px;
+                font-family: 'Dosis', sans-serif;
             }
 
             .card-body {
                 padding:30px 20px;
                 text-align:center;
-                font-size:15px;
+                font-size:20px;
+                color:#592C12;
+                background:#F2D1B3;
+                font-family: 'Dosis', sans-serif;
             }
 
             .card:hover {
@@ -38,7 +113,7 @@
                 box-shadow:0 0 40px -10px rgba(0, 0, 0, 0.25);
             }
 
-            @media (max-width:1000px) {
+            @media (max-width:1000px ) {
             .card {
                 width:40%;
                 }
@@ -49,7 +124,7 @@
                 width:100%;
             }
 
-            .heading {
+            .title {
                 padding:20px;
                 font-size:20px;
             }
@@ -59,68 +134,318 @@
                 }
             }
 
+        .nanosize-img {
+            height:55%; 
+            width:85%;
+            margin:120px;
+            
+        }
+    
+        .mid-body {
+            background-color:#F2BF5E;
+            width:1500px;
+            height:1050px;
+            padding:100px;
+            margin:-100px;
+            background-position:center;
+            position:absolute;
+            bottom:-350%;
+            outline:2px solid yellow;
+        }
+        
+        .faq-title {
+            font-size:150px;
+            text-align:center;
+            font-family: 'Anton', sans-serif;
+            position:relative;
+            padding:10px;
+            margin:0px;
+            bottom:10%;
+            color:#592C12;
+            
+            
+        }
+        
+        .questions {
+           font-family: 'Dosis', sans-serif;
+            font-size:35px;
+            text-align:left;
+            position:relative;
+            margin:0px;
+            padding:15px;
+            bottom:10%;
+            color:#592C12;
+        }
+        
+        
+        .response {
+            font-family: 'Dosis', sans-serif;
+            font-size:25px;
+            text-align:left;
+            margin:0px;
+            padding:0px;
+            position:relative;
+            top:-100px;
+            color:#592C12;
+        }
+        
+ 
+        .book {
+            margin:0px;
+            padding:0px;
+            position:absolute;
+            top:605%;
+            right:10%;
+            width:550px;
+            height:650px;
+        }
+        
+        
+        .person {
+            margin:0px;
+            padding:0px;
+            position:absolute;
+            top:503%;
+            right:10%;
+            width:550px;
+            height:680px;
+        }
+        
+        
+        .body {
+            background-color:lightblue;
+            width:1500px;
+            padding:100px;
+            margin:-100px;
+            background-position:center;
+            position:absolute;
+            bottom:-585%;
+            outline:2px solid #A64208;
+        }
+        
+        @media (max-width:1000px ) {
+            .body {
+                width:40%;
+                }
+            }
+        
+        
+        .timeline {
+            font-size:150px;
+            text-align:center;
+            font-family: 'Anton', sans-serif;
+            position:relative;
+            padding:0px;
+            margin:0px;
+            bottom:40px;
+            color:#A64208;
+        }
+      
+        
+        .timeline-headers {
+            font-family:'Economica', sans-serif;
+            font-size:35px;
+            text-align:left;
+            position:relative;
+            padding:10px;
+            color:#A64208;
+        }
+        
+        
+        .timeline-body {
+            font-family: 'Dosis', sans-serif;
+            font-size:25px;
+            text-align:left;
+            position:relative;
+            margin:10px;
+            padding:0px;
+            width:600px;
+            color:#A64208;
+            
+        }
+        
+        
+        
         </style>
 
 
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,700;1,400&family=Lilita+One&family=Londrina+Solid:wght@300&family=Recursive:wght@300&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com"> 
+            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo&family=Dosis&display=swap" rel="stylesheet">
         <title>Title</title>
     </head>
-    <body>
 
-        <div class="row">
-            <div class="card">
-                <img src="nanobot.jpg" height="250px">
-                <div class="card-header">
-                    <h1>NanoBots</h1>
-                </div>
-                 <div class="card-body">
-                    <p> nanotechnological robots</p>
-                </div>
-            </div>
 
-            <div class="card">
-                <img src="nanoparticle.jpg" height="250px">
-                <div class="card-header">
-                    <h1>NanoParticles</h1>
-                </div>
-                 <div class="card-body">
-                    <p> microscopic particle</p>
-                </div>
-            </div>
+        <header class="header">
+                                           <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#F2D1B3;">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo2.png" height="100" width="100">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Click to select which section
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#section1">Introduction</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#section2">Vocabulary</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#section3">FAQ</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#section4">Timeline</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+        </header>
+        
 
-            <div class="card">
-                <img src="nanosize.png" height="250px">
-                <div class="card-header">
-                    <h1>Nano</h1>
-                </div>
-                 <div class="card-body">
-                    <p> a measurement</p>
-                </div>
-            </div>
 
-            <div class="card">
-                <img src="nanotech.jpg" height="250px">
-                <div class="card-header">
-                    <h1>NanoTech</h1>
+
+         <div class="background">
+              <h1 class="heading"> NanoTechnology <br> in Medicine </h1>
+              <h2 class="heading2"> "Nanotechnology is an idea that <br> most people simply didn't believe" <br> Ralph Merkle </h2>
+         </div>
+               
+    
+        <div class= "container">
+            <div class="row">
+                <div class="col-sm-10">
+                    <section id="section1">
+                        <p class="intro"> Nanotechnology in medicine is a newly discovered concept that is soon to revolutionize the future of medicine. Nanotech has targeted diseases that modern medicine does not have a cure for, for example cancer. You might be wondering why is nanotech different from modern medicine and what makes it so powerful? Based on research nanotech particles are created with substances, light, heat, etc. to repair damaged cells whereas modern medicine cannot deliver drugs as such. In addition particles are programmed to go to designated cells in our bodies to treat certain cells which make it so much more different than having swallowed a tablet. Therefore, nanotechnology in medicine could possibly make our futures more efficient.</p>
+                    </section>   
                 </div>
-                 <div class="card-body">
-                    <p> the use of matter on an atomic, molecular, and supramolecular scale for industrial purposes</p>
-                </div>
-            </div>
+            </div> 
         </div>
+               
+               
+            <section id="section2">
+                    <div class="row">
+                    <div class="card-group">
+                  <div class="card">
+                    <img src="nanotech.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano Technology</h5>
+                      <p class="card-text">NanoTechnological robots</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanoparticle.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano Particles</h5>
+                      <p class="card-text">Microscopic particle</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanosize.png" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Nano</h5>
+                      <p class="card-text"> A measurement</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="nanobot.jpg" height="300px" width="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Nano Bots</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                  </div>
+            </div>
+                </div>
+            
+            <div class="container" "nanosize-img">
+                <img class="nanosize-img" src="https://beautyundercoverproduction.s3.amazonaws.com/ckeditor/pictures/data/000/046/615/content/nano_size2.jpg">
+            </div>
+            </section>
+
+            
+            <div class="container">
+             <section id="section3">
+                 <div class="mid-body">
+                    <h2 class="faq-title"> FAQ</h2>
+                        <p class="questions"> What is nano-technology? How can it be applied to Pre-med?</p>
+                           <ul>
+                               <li class="response"> Nanotechnology is “Nanotechnology is science, engineering, and technology conducted at the nanoscale, which is about 1 to 100 nanometers” based on Nano.gov. Nanotech is applied to the field of pre-med because of the theory that nanomedicine can better cure diseases with its different features. For example  “the science and technology of diagnosing, treating, and preventing disease and traumatic injury, of relieving pain, and of preserving and improving human health, using molecular tools and molecular knowledge of the human body.” Based on NCBI </li>
+                           </ul>
+        
+                        <p class="questions"> When/who developed this theory ?</p>
+                           <ul>
+                           <li class="response"> Nanotechnology was developed by physicist Richard P Feynman on Dec 29, 1959. It wasn’t unit 1981’s until modern nanotechnology began due to the lack of tools to magnify a nano. Nano.gov </li>
+                           </ul>
+        
+                        <p class="questions">How does it function? </p>
+                           <ul>
+                               <li class="response">Nanobots have an algorithm/ programmed that is set to go to a designated area in the body, and release nanoparticles. Nanoparticles are specifically designed to treat a certain disease and so when in the destination they fight off or repair the cells. citation </li>
+                           </ul>
+                           
+                        <p class="questions"> How is it better than medicine?</p>
+                           <ul>
+                               <li class="response"> Nanoparticles can deliver substances like heat, light whereas modern drugs are made from solid/liquid substances. Nanobots are also specifically programmed to target certain cells in the body.</li>
+                           </ul>
+               </section>
+         </div>
+             </section>
+         </div>
+            
+
+    <section id="section4">
+        <div class="container">
+           <div class="body"> <h2 class="timeline"> Timeline </h2>
+           <h3 class="timeline-headers"> NanoMedicine in the Past</h3>
+           <p>
+                <li class="timeline-body"> Nanotech was discovered by Richard P Feynman and the possibilities of nanomedicine then occurred.</li>
+                <li class="timeline-body">Feynman thought of this idea when his friend Albert R Hibbs mentioned the idea of swallowing mini surgeons to get procedures done</li>
+                <li class="timeline-body">In 1968 Eric Dexler brought up a theory of “cell repairing machines” </li>
+                <li class="timeline-body">In 1996 Robert Freitas released a book about nanomedicine in detail called Nanomedicine, also known as one of the great nanotech books at the time </li>
+                <li class="timeline-body">The book The Nanotechnology Revolution is said to have talked about the first drug delivery using nano-particles</li>
+                <li class="timeline-body">The further investigation of nanoparticles, and better turning substances into a nano size started in the 1990’s</li>
+            </p>
+
+           <h3 class="timeline-headers"> NanoMedicine in the Present</h3>
+           <p>
+               <li class="timeline-body">Research laboratories began to open to conduct and operate research within this field. Some companies/ research centers include:  NNI (National Nanotechnology Initiative),  IWGN (The Interagency Working Group on Nanotechnoloy), etc.</li>
+               <li class="timeline-body"> NNI was funded by congress for its research and development</li>
+               <li class="timeline-body"> Colleges and universities started making this a global research in upper level schools</li>
+               <li class="timeline-body"> Target for nanomedicine in this era is to cure cancer, cardiovascular, and neurodegenerative diseases, as well as other illnesses</li>
+               <li class="timeline-body">Clinical trials to further understand nanomedical capabilities and develop cures </li>
+            </p>
+
+           <h3 class="timeline-headers"> NanoMedicine in the Future</h3>
+           <p>
+               <li class="timeline-body"> The future expectations for nanomedicine is to focus on certain illnesses like cancer, and for it to positively kill cancers</li>
+               <li class="timeline-body"> Safe drug delivery </li>
+               <li class="timeline-body"> Minimize impacts on individual </li>
+           </p>
+           </div>
+           
+          <div>
+           <img class="person"src="https://caltech-prod.s3.amazonaws.com/main/images/feynman01-NEWS-WEB.width-600_tSwRQP5.jpg">
+          </div>
+           
+           <div>
+           <img class="book"src="https://images-na.ssl-images-amazon.com/images/I/51PcNE1Ps4L._SX329_BO1,204,203,200_.jpg">
+           </div>
+    </section>
+       
+ <button onclick="topFunction(https://ide-64741b648b63496ea82eda82a2004f51-8081.cs50.ws/index.html#section4)" id="myBtn" title="Go to top">Top</button>
 
 
 
-
-
-
-
-
+        <!-- JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            // JS
-
-
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

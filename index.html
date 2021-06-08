@@ -23,15 +23,12 @@
              background-position:center;
              width:1700px;
              height:800px;
-             padding:25em;
              color:black;
              outline:2px solid grey;
              margin:-20px;
              padding:200px;
-
-
-
          }
+        
 
          .heading {
              font-family: 'Lilita One', cursive;
@@ -48,6 +45,7 @@
              width: 765px;
 
          }
+            
          .heading2 {
              font-family: 'Economica', cursive;
              font-weight: 50px;
@@ -63,7 +61,7 @@
              
          }
          
-         .intro {
+             .intro {
              margin:60px;
              padding:55px;
              font-size:35px;
@@ -75,12 +73,13 @@
              width:1200px;
              outline:5px solid #B64926;
          }
-         
-             .row {
+
+            .row {
                 display:flex;
                 justify-content:space-between;
                 flex-flow:wrap;
                 }
+                
 
             .card {
                 width:20%;
@@ -141,7 +140,7 @@
             margin:120px;
             
         }
-        
+    
         .mid-body {
             background-color:#F2BF5E;
             width:1500px;
@@ -178,6 +177,7 @@
             color:#592C12;
         }
         
+        
         .response {
             font-family: 'Dosis', sans-serif;
             font-size:25px;
@@ -188,8 +188,8 @@
             top:-100px;
             color:#592C12;
         }
-    
         
+ 
         .book {
             margin:0px;
             padding:0px;
@@ -200,6 +200,7 @@
             height:650px;
         }
         
+        
         .person {
             margin:0px;
             padding:0px;
@@ -209,6 +210,7 @@
             width:550px;
             height:680px;
         }
+        
         
         .body {
             background-color:lightblue;
@@ -221,6 +223,12 @@
             outline:2px solid #A64208;
         }
         
+        @media (max-width:1000px ) {
+            .body {
+                width:40%;
+                }
+            }
+        
         
         .timeline {
             font-size:150px;
@@ -232,6 +240,7 @@
             bottom:40px;
             color:#A64208;
         }
+      
         
         .timeline-headers {
             font-family:'Economica', sans-serif;
@@ -241,6 +250,7 @@
             padding:10px;
             color:#A64208;
         }
+        
         
         .timeline-body {
             font-family: 'Dosis', sans-serif;
@@ -253,6 +263,8 @@
             color:#A64208;
             
         }
+        
+        
         
         </style>
 
@@ -281,14 +293,17 @@
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Options
+                            Click to select which section
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#section1">Scroll to Top</a></li>
+                            <li><a class="dropdown-item" href="#section1">Introduction</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#section2">Timeline</a></li>
+                            <li><a class="dropdown-item" href="#section2">Vocabulary</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#section3">FAQ</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#section4">Timeline</a></li>
+                            <li><hr class="dropdown-divider"></li>
                           </ul>
                         </li>
                       </ul>
@@ -301,21 +316,20 @@
 
 
          <div class="background">
-         <section id="section1">
               <h1 class="heading"> NanoTechnology <br> in Medicine </h1>
               <h2 class="heading2"> "Nanotechnology is an idea that <br> most people simply didn't believe" <br> Ralph Merkle </h2>
-         </section>
          </div>
                
     
-        <div class="container">
-                <section id="section2">
+        <div class= "container-sm">
+                <section id="section1">
                     <p class="intro"> Nanotechnology in medicine is a newly discovered concept that is soon to revolutionize the future of medicine. Nanotech has targeted diseases that modern medicine does not have a cure for, for example cancer. You might be wondering why is nanotech different from modern medicine and what makes it so powerful? Based on research nanotech particles are created with substances, light, heat, etc. to repair damaged cells whereas modern medicine cannot deliver drugs as such. In addition particles are programmed to go to designated cells in our bodies to treat certain cells which make it so much more different than having swallowed a tablet. Therefore, nanotechnology in medicine could possibly make our futures more efficient.</p>
                 </section>    
         </div>
                
                
-                <div class="row">
+            <section id="section2">
+                    <div class="row">
                     <div class="card-group">
                   <div class="card">
                     <img src="nanotech.jpg" height="300px" width="200px" class="card-img-top" alt="...">
@@ -351,6 +365,7 @@
             <div class="container" "nanosize-img">
                 <img class="nanosize-img" src="https://beautyundercoverproduction.s3.amazonaws.com/ckeditor/pictures/data/000/046/615/content/nano_size2.jpg">
             </div>
+            </section>
 
             
             <div class="container">
@@ -382,8 +397,8 @@
          </div>
             
 
-       <div class="container">
-           <section id="section3">
+    <section id="section4">
+        <div class="container">
            <div class="body"> <h2 class="timeline"> Timeline </h2>
            <h3 class="timeline-headers"> NanoMedicine in the Past</h3>
            <p>
@@ -419,6 +434,8 @@
            <div>
            <img class="book"src="https://images-na.ssl-images-amazon.com/images/I/51PcNE1Ps4L._SX329_BO1,204,203,200_.jpg">
            </div>
+    </section>
+       
 
 
 
